@@ -1,7 +1,7 @@
 package src;
 
 import java.util.*;
-
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,17 +9,24 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean isRunning = true;
 
-        while (isRunning) {
+        while (isRunning){
             menu();
             System.out.print("Your choice: ");
             int choice = scanner.nextInt();
-
+            if (choice >= 5) {
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    System.out.println(e.getMessage());
+                }
+                System.out.println("0-4");
+                continue;
+            }
             if (choice == 1) {
                 System.out.println("choice1");
             }
             if (choice == 2) {
                 System.out.println("choice2");
-
             }
             if (choice == 3) {
                 System.out.println("choice3");
@@ -31,15 +38,23 @@ public class Main {
                 System.out.println("Closing the boarding");
                 isRunning = false;
             }
-
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                System.out.println(e.getMessage());
+            }
         }
 
         scanner.close();
     }
 
-
-    public static void menu() {
+    public static void menu(){
         System.out.println("Boarding .. .... ... ..");
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println("1.Check-in passengers");
         System.out.println("2.Passenger info");
         System.out.println("3.Remove passenger");
