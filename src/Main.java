@@ -1,5 +1,7 @@
 package src;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -23,7 +25,7 @@ public class Main {
                 continue;
             }
             if (choice == 1) {
-                System.out.println("choice1");
+                System.out.println("Check-in");
             }
             if (choice == 2) {
                 System.out.println("choice2");
@@ -62,4 +64,24 @@ public class Main {
         System.out.println("4.Flight info");
         System.out.println("0.Close boarding");
     }
+    public static void checkIn(){
+
+    }
+    public static void setLoadeddata(ArrayList<Passenger>loaddata){
+        Scanner fileScanner = null;
+        try {
+            fileScanner = new Scanner(new File("F:\\CSVDemo.csv"));
+            fileScanner.useDelimiter(",");
+            while (fileScanner.hasNext()) {
+                String info = fileScanner.nextLine();
+
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("We could not load the file.");
+            throw new RuntimeException(e);
+        }
+
+    }
+
+
 }

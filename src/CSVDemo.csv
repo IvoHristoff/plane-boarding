@@ -1,0 +1,20 @@
+#firstName,secondName,age,nationality,city,ticketType,seat,checkInLuggage
+Ivo,Hristov,20,Bulgaria,Burgas,non-priority,1A,false
+Elena,Hristova,20,Bulgaria,Burgas,non-priority,1B,true
+Alex,Hadjikrastev,20,Bulgaria,Sofia,non-priority,1F,false
+Gabriela,Hadjikrasteva,20,Bulgaria,Sofia,non-priority,1E,true
+John,Peshev,79,Turkey,Akbaba,priority,30F,false
+Avery,Johnson,28,United States,New York,priority,2B,true
+Brianna,Williams,32,Canada,Toronto,non-priority,4A,false
+Cameron,Lee,25,United States,Los Angeles,priority,3C,true
+Diana,Clark,31,Mexico,Mexico City,non-priority,1B,false
+Ethan,Brown,29,United Kingdom,London,priority,5A,true
+Faith,Allen,23,United States,Miami,non-priority,2C,false
+Gabriel,Gonzalez,27,Spain,Madrid,priority,4B,true
+Haley,Smith,24,United States,Chicago,non-priority,3A,false
+Isaac,Rodriguez,30,Mexico,Cancun,priority,1C,true
+Jasmine,King,26,United States,San Francisco,non-priority,5B,false
+Kaleb,Wright,22,United States,Houston,priority,2A,true
+Lila,Lopez,28,Mexico,Puerto Vallarta,non-priority,4C,false
+Mason,Hernandez,33,United States,Dallas,priority,3B,true
+Nora,Garcia,30,Spain,Barcelona,non-priority,1A,false
