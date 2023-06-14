@@ -10,6 +10,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         boolean isRunning = true;
+        setLoadeddata();
 
         while (isRunning){
             menu();
@@ -72,8 +73,10 @@ public class Main {
         try {
             fileScanner = new Scanner(new File("F:\\CSVDemo.csv"));
             fileScanner.useDelimiter(",");
+            fileScanner.nextLine();
             while (fileScanner.hasNext()) {
                 String info = fileScanner.nextLine();
+                System.out.println(info);
 
             }
         } catch (FileNotFoundException e) {
